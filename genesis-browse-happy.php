@@ -9,14 +9,14 @@
  * @wordpress-plugin
  * Plugin Name:       Genesis Browse Happy
  * Plugin URI:        https://github.com/craigsimps/genesis-browse-happy
- * Description:       Places a notification at the top of the screen and links the user to <a href="http://browsehappy.com/">Browse Happy</a> if they are  using IE9 or below.
+ * Description:       Places a notification at the top of the screen and links the user to <a href="https://browsehappy.com/">Browse Happy</a> if they are  using IE9 or below.
  * Version:           1.0.1
  * Author:            Craig Simpson
  * Author URI:		  https://craigsimpson.scot/
  * Text Domain:	      genesis-browse-happy
  * Domain Path	      /languages
  * License:           GPL-2.0+
- * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
+ * License URI:       https://www.gnu.org/licenses/gpl-2.0.txt
  * GitHub Plugin URI: craigsimps/genesis-browse-happy
  * GitHub Plugin URI: https://github.com/craigsimps/genesis-browse-happy
  */
@@ -38,7 +38,7 @@ function add_notice() {
 	printf(
 		/* translators: %s link to Browse Happy website */
 		wp_kses_post( __( '<p class="browser-upgrade">You are using an <strong>outdated</strong> browser. Please <a href="%s">upgrade your browser</a> to improve your experience and security.</p>', 'genesis-browse-happy' ) ),
-		esc_url( 'http://browsehappy.com/' )
+		esc_url( 'https://browsehappy.com/' )
 	);
 	echo '<![endif]-->';
 }
